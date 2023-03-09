@@ -27,20 +27,20 @@ document.addEventListener('DOMContentLoaded', (bolas) => {
             contenedor[i] = document.createElement('img');
             switch (foto) {
                 case 1:
-                    contenedor[i].src="https://static.miraheze.org/hololivewiki/thumb/9/93/Watson_Amelia_-_Portrait_Mini.png/290px-Watson_Amelia_-_Portrait_Mini.png"
+                    contenedor[i].src="./imgs/amelie.png"
                     amarillo++;
 
                     break;
                 case 2:
-                    contenedor[i].src="https://static.miraheze.org/hololivewiki/thumb/5/5e/Ninomae_Ina%27nis_-_Portrait_Mini.png/290px-Ninomae_Ina%27nis_-_Portrait_Mini.png"
+                    contenedor[i].src="./imgs/gura.png"
 
                     break;
                 case 3:
-                    contenedor[i].src='https://static.miraheze.org/hololivewiki/thumb/0/00/Takanashi_Kiara_-_Portrait_Mini.png/290px-Takanashi_Kiara_-_Portrait_Mini.png'
+                    contenedor[i].src='./imgs/ina.png'
 
                     break;  
                 case 4:
-                    contenedor[i].src='https://static.miraheze.org/hololivewiki/thumb/1/17/Gawr_Gura_-_Portrait_Mini.png/290px-Gawr_Gura_-_Portrait_Mini.png'
+                    contenedor[i].src='./imgs/kiara.png'
 
                     break;  
                 default:
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', (bolas) => {
    
             if(latDret && latEsq && altSup && altInf){
                 bola[i].remove();
-                if (bola[i].src == "https://static.miraheze.org/hololivewiki/thumb/9/93/Watson_Amelia_-_Portrait_Mini.png/290px-Watson_Amelia_-_Portrait_Mini.png") {
+                if (bola[i].src.match ("amelie.png")) {
                     aciertos++;
                     contador++;
                 }
